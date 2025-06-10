@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+.error {
+    color: red;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.title-input {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.title-input input {
+    padding: 5px;
+    font-size: 16px;
+    width: 300px;
+    border: 1px solid #000;
+    border-radius: 4px;
+}
+
+.grid-container {
+    display: flex;
+    gap: 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(10, 100px);
+    grid-template-rows: repeat(5, 100px);
+    gap: 5px;
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #000;
+}
+
+.grid-cell {
+    width: 100px;
+    height: 100px;
+    border: 1px dashed #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f9f9f9;
+    overflow: hidden;
+}
+
+.grid-cell img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+#generateBtn {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#generateBtn:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+.download-section {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#previewCanvas {
+    max-width: 100%;
+    border: 1px solid #000;
+}
