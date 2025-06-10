@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>画像グリッド生成</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>画像グリッド生成</h1>
+        <div id="error" class="error"></div>
+        <div class="title-input">
+            <label for="imageTitle">画像の題名: </label>
+            <input type="text" id="imageTitle" placeholder="題名を入力してください" maxlength="50">
+        </div>
+        <div class="grid-container">
+            <div id="grid" class="grid"></div>
+        </div>
+        <input type="file" id="fileInput" accept="image/*" style="display: none;">
+        <button id="generateBtn" disabled>画像を生成</button>
+        <div id="downloadSection" class="download-section" style="display: none;">
+            <h2>プレビュー</h2>
+            <canvas id="previewCanvas"></canvas>
+            <br>
+            <a id="downloadLink" href="#" download="grid-image.png">画像をダウンロード</a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
